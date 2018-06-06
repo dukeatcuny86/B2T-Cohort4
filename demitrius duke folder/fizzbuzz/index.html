@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>FizzBuzz</title>
+</head>
+<body>
+<div id="test"></div>
+<script>
+
+
+  var line = document.getElementById('test');
+    for(var i=1;i<=100;i++)
+
+{
+  if(i % 3 == 0)
+  {
+    line.innerHTML = line.innerHTML + 'Fizz';
+  }
+  
+  if(i % 5 == 0)
+  {
+    line.innerHTML = line.innerHTML + 'Buzz';
+  }
+  
+  if(i % 5 != 0 && i % 3 != 0)
+  {
+    line.innerHTML = line.innerHTML + i;
+  }
+  
+  line.innerHTML = line.innerHTML + '<p>';
+}
+</script>
+</body>
+</html>
