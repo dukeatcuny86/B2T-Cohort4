@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Number Input with Prompt
+    </title>
+   <script type = "text/javascript">
+
+  <!--
+
+    var total;
+    var inputNumber;
+    var value;
+    var highestNumber = [];
+    //var finalMax = Math.max.  //<-----Can anything be added here to get the maximum number entered in the prompt window that appears?
+
+    total = 0;
+    inputNumber = 1;
+
+    while ( inputNumber <= 3 ){
+
+      value = window.prompt( "Enter number " + inputNumber + " of 3:" , "" );
+
+      while(isNaN(parseInt( value ))){
+       value = window.prompt( "Enter number " + inputNumber + " of 3:" , "" );
+      }
+
+      highestNumber[inputNumber] = value;
+
+      total = total + value;
+
+      inputNumber = inputNumber + 1;
+
+    }
+
+    finalMax = Math.max(highestNumber[1], highestNumber[2], highestNumber[3]);
+
+    document.writeln(
+         "<h1>The highest number is " + finalMax + "</h1>" );
+
+  // -->
+
+</script>
+</head>
+<body>
+</body>
+</html>

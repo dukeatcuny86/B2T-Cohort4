@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="dislay"></h1>
+	<script>
+		//var input = prompt("How old are you?")
+		//var age = parseInt(input);
+
+		
+		var input = parseInt( prompt("How old are you?"));
+		//if user is between 25 and 55 they can enter page
+
+
+		if (25 <= input && input <= 55){
+			document.getElementById('display').innerHTML =
+			"Welcome Adult!";
+		}
+		else if (input>55){
+			//if user is over 55
+			document.getElementsById('display').innerHTML =
+			"Youre going to catch a heart attack looking around here";
+		}
+		else if(input >= 20 && input <25){
+			document.getElementById('display').innerHTML = "youre not ready for this !!"
+		}
+		else{
+			document.getElementById('display').innerHTML =
+			alert("Child Be Gone!!");
+
+		}
+
+
+
+		var pet = prompt( "what kind of pet do you have?");
+		switch(pet){
+			case 'dog':
+				console.log('bark bark');
+			case 'cat':
+				console.log('meow meow');
+		}
+	</script>
+
+</body>
+</html>
