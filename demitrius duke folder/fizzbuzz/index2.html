@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow ", "Sea Green"];
+var ordinal = ["th","st","nd","rd"];
+var text = " choice is ";
+var counter = 1;
+
+for(var i = 0; i < color.length; i++) {
+if(i <= 2) {
+console.log(counter + ordinal[i+1] + text + color[i]);
+} else {
+console.log(counter + ordinal[0] + text + color[i]);
+}
+counter++;
+}
+	</script>
+
+</body>
+</html>

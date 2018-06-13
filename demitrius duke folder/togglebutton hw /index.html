@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		div{background-color: green;}
+	</style>
+</head>
+<body>
+	<input id= 'Onoff' type="button" value="On">
+	<div id='color' style= "color:green; width : 100px; height:100px"></div>
+
+<script>
+	var off = document.getElementById('Onoff');
+	function OnoffButton(){
+		 if(off.value == 'On'){
+			  off.value = 'Off'
+	}else {
+		off.value = 'On'
+	}
+
+document.getElementById('Onoff');addEventListener('click',OnoffButton);
+
+	var box = document.getElementById('color');
+	    box = document.getElementById('mouseenter', function(){
+		if (off.value == "On"){
+			box.style.backgroundcolor ='green';
+		}
+	});
+
+	box.addEventListener('mouseleave', function(){
+		if (of.value == 'On') {
+			box.style.backgroundcolor = 'red';
+		}
+	});
+</script>
+</body>
+</html>
